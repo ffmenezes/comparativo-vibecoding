@@ -897,7 +897,7 @@
   </div>
 
   <!-- Claude Code ★ -->
-  <div class="tool-card favorite" data-tags="agentic-search,mcp,skills,hooks,cicd,cli,ide-extension,vscode-compat,no-training,local-processing,self-hosted,transparent,terminal,auto-fix,custom-rules,parallel-agents,enterprise,large-context,claude-access" data-type="CLI" data-cost="3">
+  <div class="tool-card favorite" data-tags="agentic-search,mcp,skills,hooks,automations,cicd,cli,ide-extension,vscode-compat,no-training,local-processing,self-hosted,transparent,terminal,auto-fix,custom-rules,parallel-agents,enterprise,large-context,claude-access" data-type="CLI" data-cost="3">
     <div class="card-badges"><div class="card-fav-badge">★ Favorita</div><div class="card-type-badge">CLI</div></div>
     <div class="card-header">
       <div class="card-icon" style="background:#c96442;">A</div>
@@ -912,7 +912,7 @@
       <div class="card-row"><span class="row-label">Custo</span><span class="row-val"><span class="cost-scale"><span class="cost-active">$$$</span><span class="cost-inactive">$$</span></span><span class="cost-scale-label">Pro ok; Max ($100+) p/ uso sério</span></span></div>
       <div class="card-row"><span class="row-label">Contexto</span><span class="row-val">Agentic puro (grep/ls/read) · 200k ctx</span></div>
       <div class="card-row"><span class="row-label">Modelos</span><span class="row-val">Claude exclusivo (Opus 4.6, Sonnet 4.6)</span></div>
-      <div class="card-row"><span class="row-label">Extensível</span><span class="row-val val-yes">MCP · Hooks · Skills · Rules · Sub-agents</span></div>
+      <div class="card-row"><span class="row-label">Extensível</span><span class="row-val val-yes">MCP · Hooks · Skills · Rules · Sub-agents · Agent Teams · Scheduled Tasks</span></div>
       <div class="card-row"><span class="row-label">Privacidade</span><span class="row-val val-yes">Código local (envia só ao modelo)</span></div>
     </div>
     <div class="card-reddit">
@@ -1477,10 +1477,11 @@ const GLOSSARY = {
     ]
   },
   'automations': {
-    title: 'Automações Event-driven',
-    desc: 'Agentes que rodam continuamente, disparados por eventos externos como mensagens no Slack, issues no Linear, PRs no GitHub, ou alertas do PagerDuty.',
+    title: 'Automações',
+    desc: 'Fluxos em que o agente roda sem você disparar manualmente cada execução. Pode ser event-driven (PR, Slack, issue, alertas) ou time-driven (cron, reminders, loops agendados).',
     refs: [
       { url: 'https://docs.cursor.com/automations', label: 'Cursor Automations (mar/2026)' },
+      { url: 'https://code.claude.com/docs/en/scheduled-tasks', label: 'Claude Code Scheduled Tasks' },
       { url: 'https://techcrunch.com/2026/03/05/cursor-is-rolling-out-a-new-system-for-agentic-coding/', label: 'TechCrunch — Cursor Agentic System' },
     ]
   },
@@ -1512,9 +1513,10 @@ const GLOSSARY = {
   },
   'parallel-agents': {
     title: 'Agentes Paralelos',
-    desc: 'Executa múltiplos agentes simultaneamente em tarefas independentes, acelerando fluxos complexos. Ex: um agente escreve testes enquanto outro implementa features.',
+    desc: 'Executa múltiplos agentes simultaneamente para dividir trabalho. Vai do modelo simples de sub-agents até times coordenados com task list compartilhada e troca de mensagens entre agentes.',
     refs: [
       { url: 'https://docs.anthropic.com/en/docs/claude-code/sub-agents', label: 'Claude Code Sub-agents' },
+      { url: 'https://code.claude.com/docs/en/agent-teams', label: 'Claude Code Agent Teams' },
       { url: 'https://docs.cursor.com/agent#background-agents', label: 'Cursor Background Agents' },
       { url: 'https://roocode.com/docs/features/multi-agent', label: 'Roo Code Multi-agent' },
     ]
