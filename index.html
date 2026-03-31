@@ -926,6 +926,35 @@
     </div>
   </div>
 
+  <!-- Qwen-Code ★ -->
+  <div class="tool-card favorite" data-tags="agentic-search,multimodel,local-model,claude-access,mcp,skills,cli,ide-extension,vscode-compat,free-tier,byok,local-processing,self-hosted,no-training,transparent,open-source,terminal,auto-fix,custom-rules,large-context,any-stack" data-type="CLI" data-cost="1">
+    <div class="card-badges"><div class="card-fav-badge">★ Favorita</div><div class="card-type-badge">CLI</div></div>
+    <div class="card-header">
+      <div class="card-icon" style="background:#00a3a3;">QW</div>
+      <div>
+        <div class="card-title"><a href="https://github.com/QwenLM/qwen-code" target="_blank" rel="noopener">Qwen-Code</a></div>
+        <div class="card-subtitle">github.com/QwenLM/qwen-code · Qwen CLI agent (OSS)</div>
+      </div>
+    </div>
+    <div class="card-tags"></div>
+    <div class="card-rows">
+      <div class="card-row"><span class="row-label">Planos</span><span class="row-val">Free OSS · Qwen OAuth (1k/day) · BYOK</span></div>
+      <div class="card-row"><span class="row-label">Custo</span><span class="row-val"><span class="cost-scale"><span class="cost-active">$</span><span class="cost-inactive">$$$$</span></span><span class="cost-scale-label">Free via OAuth; Local = $0; API typical</span></span></div>
+      <div class="card-row"><span class="row-label">Contexto</span><span class="row-val">Agentic (Plan Mode/Subagents) · 128k+ ctx</span></div>
+      <div class="card-row"><span class="row-label">Modelos</span><span class="row-val">Qwen3-Coder (otimizado) · Claude, GPT, Gemini via BYOK</span></div>
+      <div class="card-row"><span class="row-label">Extensível</span><span class="row-val val-yes">MCP · Skills · VS Code / Zed / JetBrains</span></div>
+      <div class="card-row"><span class="row-label">Privacidade</span><span class="row-val val-yes">Local-first · MIT/Apache license · Telemetria (opcional)</span></div>
+    </div>
+    <div class="card-reddit">
+      <div class="card-reddit-header">▲ Reddit diz</div>
+      <div class="reddit-row reddit-pro">Padrão ouro para coding local (32B); rivaliza Claude 3.5 Sonnet</div>
+      <div class="reddit-row reddit-pro">Gratuito (1k reqs/dia) via Qwen OAuth; offline via Ollama</div>
+      <div class="reddit-row reddit-con">Telemetria ativada por padrão (exige fork "no-telemetry")</div>
+      <div class="reddit-row reddit-con">"Teimoso" em erros; exige 24GB VRAM p/ performance máxima</div>
+      <div><span class="reddit-sentiment sentiment-positive">Sentimento: Positivo (melhor alternativa local)</span></div>
+    </div>
+  </div>
+
   <!-- VS Code + Copilot ★ -->
   <div class="tool-card favorite" data-tags="multimodel,mcp,ide,ide-extension,vscode-compat,inline-complete,free-tier,no-training,terminal,github-native,claude-access,beginner-friendly,enterprise,auto-fix,agentic-search,custom-rules,any-stack" data-type="Extensão" data-cost="2">
     <div class="card-badges"><div class="card-fav-badge">★ Favorita</div><div class="card-type-badge">Extensão</div></div>
@@ -1495,7 +1524,7 @@ const GLOSSARY = {
     desc: 'Ferramenta que opera diretamente no terminal sem interface gráfica própria. Ideal para automação, CI/CD e workflows de terminal-first.',
     refs: [
       { url: 'https://docs.anthropic.com/en/docs/claude-code', label: 'Claude Code Docs' },
-      { url: 'https://github.com/openai/codex', label: 'OpenAI Codex CLI (GitHub)' },
+      { url: 'https://github.com/QwenLM/qwen-code', label: 'Qwen-Code (OSS)' },
       { url: 'https://github.com/google-gemini/gemini-cli', label: 'Gemini CLI (GitHub)' },
     ]
   },
@@ -1504,8 +1533,8 @@ const GLOSSARY = {
     desc: 'Plugin que adiciona capacidades AI a uma IDE existente (VS Code, JetBrains, etc.) sem substituí-la.',
     refs: [
       { url: 'https://marketplace.visualstudio.com/', label: 'VS Code Marketplace' },
+      { url: 'https://github.com/QwenLM/qwen-code', label: 'Qwen-Code (VS Code)' },
       { url: 'https://github.com/cline/cline', label: 'Cline (GitHub)' },
-      { url: 'https://continue.dev/docs', label: 'Continue Docs' },
     ]
   },
   'vscode-compat': {
@@ -1548,7 +1577,7 @@ const GLOSSARY = {
     desc: 'Permite rodar modelos de linguagem localmente via Ollama, LM Studio, ou similar. Sem envio de dados para a nuvem.',
     refs: [
       { url: 'https://ollama.com/', label: 'Ollama' },
-      { url: 'https://lmstudio.ai/', label: 'LM Studio' },
+      { url: 'https://github.com/QwenLM/qwen-code', label: 'Qwen-Code (Local optimized)' },
       { url: 'https://continue.dev/docs/setup/select-model#local-models', label: 'Continue — Local Models' },
     ]
   },
@@ -1743,7 +1772,7 @@ const GLOSSARY = {
     title: 'Open Source',
     desc: 'Código fonte aberto (MIT, Apache 2.0, etc.). Permite auditoria, contribuição da comunidade, e fork para customização.',
     refs: [
-      { url: 'https://github.com/opencode-ai/opencode', label: 'OpenCode (MIT)' },
+      { url: 'https://github.com/QwenLM/qwen-code', label: 'Qwen-Code (MIT/Apache)' },
       { url: 'https://github.com/aider-ai/aider', label: 'Aider (Apache 2.0)' },
       { url: 'https://github.com/continuedev/continue', label: 'Continue (Apache 2.0)' },
     ]
@@ -1771,8 +1800,8 @@ const GLOSSARY = {
     desc: 'Funciona com qualquer linguagem, framework e stack tecnológica. Diferente de ferramentas como Lovable (React+Supabase) ou v0 (Next.js) que geram código em uma stack fixa.',
     refs: [
       { url: 'https://cursor.com', label: 'Cursor (qualquer linguagem)' },
+      { url: 'https://github.com/QwenLM/qwen-code', label: 'Qwen-Code (multi-lang)' },
       { url: 'https://docs.anthropic.com/en/docs/claude-code', label: 'Claude Code (stack-agnostic)' },
-      { url: 'https://lovable.dev', label: 'Lovable (stack fixa: React+Supabase)' },
     ]
   },
   'transparent': {
@@ -1780,14 +1809,15 @@ const GLOSSARY = {
     desc: 'O agente mostra claramente o que está fazendo: quais arquivos lê, quais comandos executa, qual o raciocínio. Permite audit trail completo.',
     refs: [
       { url: 'https://docs.anthropic.com/en/docs/claude-code', label: 'Claude Code (transparent by design)' },
+      { url: 'https://github.com/QwenLM/qwen-code', label: 'Qwen-Code (trace mode)' },
       { url: 'https://roocode.com/docs/features/audit-trail', label: 'Roo Code Audit Trail' },
-      { url: 'https://github.com/opencode-ai/opencode', label: 'OpenCode (full trace)' },
     ]
   },
   'cost-1': {
     title: '$ Gratuito / Barato',
     desc: 'Ferramentas gratuitas ou com custo mínimo (API only). Inclui tools OSS, free tiers generosos, e modelos pay-as-you-go com custo típico < $10/mês.',
     refs: [
+      { url: 'https://github.com/QwenLM/qwen-code', label: 'Qwen-Code (1k reqs/day free)' },
       { url: 'https://opencode.ai/', label: 'OpenCode (Free OSS)' },
       { url: 'https://trae.ai', label: 'Trae (100% free)' },
     ]
